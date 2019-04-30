@@ -1,8 +1,12 @@
 backend/api/node_modules
+backend/api/package-lock.json
 backend/cloudinterface/node_modules
+backend/cloudinterface/package-lock.json
 backend/stltoimage/node_modules
+backend/stltoimage/package-lock.json
 backend/stltoimage/thumbs
-backend/api/node_modules
 larasys-app/node_modules
+larasys-app/package-lock.json
 photoclient/node_modules
+photoclient/package-lock.json
 backend/conf/larasys.yml
