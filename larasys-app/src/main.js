@@ -5,7 +5,7 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-Vue.prototype.$server = 'http://192.168.180.150:4000'
+Vue.prototype.$server = ''
 
 var $ = require('jquery')
 window.jQuery = $
