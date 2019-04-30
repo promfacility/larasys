@@ -1,0 +1,17 @@
+{
+  "name": "lara-sys-photoclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "photo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "js-yaml": "^3.13.1",
+    "shelljs": "^0.8.3",
+    "webdav": "^2.6.0"
+  }
+}

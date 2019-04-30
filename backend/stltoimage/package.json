@@ -1,0 +1,22 @@
+{
+  "name": "lara-sys-backend-stltoimage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stltoimg.js",
+  "scripts": {
+    "start": "pm2-runtime stltoimg.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "js-yaml": "^3.13.1",
+    "md5-file": "^4.0.0",
+    "node-stl-thumbnailer": "^1.0.1",
+    "pm2": "^3.5.0",
+    "randomstring": "^1.1.5",
+    "shelljs": "^0.8.3",
+    "webdav": "^2.6.0"
+  }
+}

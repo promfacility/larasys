@@ -1,0 +1,8 @@
+backend/api/node_modules
+backend/cloudinterface/node_modules
+backend/stltoimage/node_modules
+backend/stltoimage/thumbs
+backend/api/node_modules
+larasys-app/node_modules
+photoclient/node_modules
+backend/conf/larasys.yml

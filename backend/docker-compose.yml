@@ -1,0 +1,43 @@
+version: '3'
+services:
+  rabbit:
+    image: "rabbitmq:3"
+    ports:
+      - 5672
+  lara_api:
+    labels:
+      name: lara_api
+    build: 
+      context: ./api  
+      dockerfile: ./Dockerfile
+    ports:
+     - "8080:4000"
+     - 5672
+    volumes:
+      - ./conf:/var/larasys
+    environment:
+      - LARASYSCONF=/var/larasys/larasys.yml
+  lara_cloud_sync:
+    labels:
+      name: lara_cloud_sync
+    build: 
+      context: ./cloudinterface  
+      dockerfile: ./Dockerfile
+    ports:
+      - 5672
+    volumes:
+      - ./conf:/var/larasys
+    environment:
+      - LARASYSCONF=/var/larasys/larasys.yml
+  lara_stltoimage:
+    labels:
+      name: lara_stltoimage
+    build: 
+      context: ./stltoimage  
+      dockerfile: ./Dockerfile
+    ports:
+      - 5672
+    volumes:
+      - ./conf:/var/larasys
+    environment:
+      - LARASYSCONF=/var/larasys/larasys.yml

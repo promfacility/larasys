@@ -1,0 +1,15 @@
+cloud:
+  host: http://xxxx/remote.php/dav/files/xxxx
+  user: xxxx
+  password: xxxx
+  folders:
+    dataset_builds: /DATASET001/BUILDS/
+    dataset_computed: /DATASET001/COMPUTED/
+    dataset_acquired: /DATASET001/ACQUIRED/
+    builds: /BUILDS/
+amqp:
+  host: amqp://xxxx
+cloudinterface:
+  cltime_s: 60000
+api:
+  port: 4000
