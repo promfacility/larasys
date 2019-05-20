@@ -10,7 +10,7 @@ COPY package*.json ./
 
 RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y build-essential g++ libcairo2-dev libgif-dev libjpeg62-turbo-dev libpango1.0-dev
+RUN apt-get install -y build-essential g++ libcairo2-dev libgif-dev libjpeg62-turbo-dev libpango1.0-dev libharfbuzz-dev libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
 RUN npm install
 
 
